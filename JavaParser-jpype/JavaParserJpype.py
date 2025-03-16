@@ -71,7 +71,7 @@ def java_parsing(java_code):
         param_list = [f"{param.getType()}" for param in parameters]
 
         # 시그니처 출력
-        print(f"  🔹 {access_modifier}{return_type} {method_name}({', '.join(param_list)})")
+        print(f"  🔹 {return_type} {method_name}({', '.join(param_list)})")
 
         try :
             method_body = method.getBody().get().toString()  # 메서드 내용 (코드 블록)
@@ -81,8 +81,8 @@ def java_parsing(java_code):
 
 
 
-read_java_files("최상위 디렉토리 입력")
+#read_java_files("최상위 디렉토리 입력")
 
 # 예시
-# read_java_files("/home/simsim/IdeaProjects/deadLock/src")
+read_java_files("/home/simsim/IdeaProjects/deadLock/src")
 
